@@ -1,0 +1,41 @@
+<!-- Testimonials section -->
+<div class="py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-base/7 font-semibold text-indigo-600">{{ site.data.landing.testimonials.title }}</h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ site.data.landing.testimonials.subtitle }}</p>
+    </div>
+
+    <!-- Testimonials grid -->
+    {% assign colors = "bg-indigo-500 bg-purple-500 bg-pink-500 bg-red-500 bg-orange-500 bg-amber-500 bg-yellow-500 bg-lime-500 bg-green-500 bg-emerald-500 bg-teal-500 bg-cyan-500 bg-sky-500 bg-blue-500 bg-violet-500 bg-fuchsia-500" | split: ' ' %}
+    <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      {% for testimonial in site.data.landing.testimonials.items %}
+      <div class="flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-900/5">
+        <blockquote class="text-gray-900">
+          <p class="text-lg leading-8">"{{ testimonial.quote }}"</p>
+        </blockquote>
+
+        <div class="mt-8 flex items-center gap-x-4">
+          {% assign author_words = testimonial.author | split: ' ' %}
+          {% assign initials     = '' %}
+          {% for word in author_words %}
+          {% assign first       = word    | slice: 0, 1 %}
+          {% assign initials    = initials | append: first | upcase%}
+          {% endfor %}
+
+          {% assign bg_color = colors | sample %}
+          <div class="h-12 w-12 rounded-full flex items-center justify-center {{ bg_color }}">
+            <span class="text-white text-sm font-semibold">{{ initials }}</span>
+          </div>
+
+          <div>
+            <div class="font-semibold text-gray-900">{{ testimonial.author }}</div>
+            <div class="text-sm text-gray-600">{{ testimonial.author_title }}</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

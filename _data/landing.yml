@@ -1,0 +1,135 @@
+hero:
+  announcement:
+    text: 'New portfolio project launched'
+    link: '#portfolio'
+    link_text: 'See Reviato'
+  title: 'Building the future of business technology'
+  description: 'EthosLink creates innovative AI-powered solutions that connect businesses with their customers. From review management to customer analytics, we build platforms that drive real growth.'
+  cta_primary:
+    text: 'View our work'
+    link: '#portfolio'
+  cta_secondary:
+    text: 'Get in touch'
+    link: '#contact'
+
+navigation:
+  - text: 'Solutions'
+    link: '#solutions'
+  - text: 'Portfolio'
+    link: '#portfolio'
+  - text: 'About'
+    link: '#about'
+  - text: 'Contact'
+    link: '#contact'
+
+solutions:
+  title: 'What we build'
+  subtitle: 'AI-powered platforms for modern businesses'
+  description: 'We specialize in creating intelligent solutions that help businesses understand, engage, and grow their customer relationships.'
+  items:
+    - title: 'Customer Experience Platforms'
+      description: 'Build comprehensive systems that capture, analyze, and act on customer feedback across all touchpoints.'
+      icon: 'users'
+    - title: 'AI-Powered Analytics'
+      description: 'Transform raw data into actionable insights with machine learning models tailored to your business needs.'
+      icon: 'brain'
+    - title: 'Automation & Integration'
+      description: 'Streamline operations with intelligent workflows that connect your existing tools and processes.'
+      icon: 'automation'
+
+dark_section:
+  title: 'Technology that scales with your vision'
+  description: 'From concept to deployment, we build robust solutions that grow with your business and adapt to changing market needs.'
+  features:
+    - title: 'Full-Stack Development'
+      description: 'Modern web applications built with React, Node.js, and cloud-native architectures.'
+    - title: 'AI & Machine Learning'
+      description: 'Custom models for sentiment analysis, predictive analytics, and intelligent automation.'
+    - title: 'Enterprise Integration'
+      description: 'Seamless connections with existing systems, APIs, and third-party platforms.'
+
+portfolio:
+  title: 'Featured Project: Reviato'
+  subtitle: 'AI-powered review management platform'
+  description: 'Our flagship product that helps local businesses transform customer feedback into growth opportunities.'
+  features:
+    - title: 'Smart Review Monitoring'
+      description: 'Tracks reviews across 50+ platforms with real-time sentiment analysis and trend detection.'
+    - title: 'AI Response Generation'
+      description: 'Generates contextually appropriate responses using advanced natural language processing.'
+    - title: 'Business Intelligence Dashboard'
+      description: 'Converts review data into actionable insights with custom reporting and analytics.'
+  link:
+    text: 'Visit Reviato.com'
+    url: 'https://reviato.com'
+  stats:
+    - value: '10,000+'
+      label: 'Businesses served'
+    - value: '2.3M+'
+      label: 'Reviews analyzed'
+    - value: '94%'
+      label: 'Improvement in ratings'
+
+about:
+  title: 'About EthosLink'
+  subtitle: 'Building meaningful connections through technology'
+  description: 'Founded in 2020, EthosLink emerged from a simple belief: technology should make business relationships more meaningful, not more complicated.'
+  story: "We started by solving review management for local businesses and discovered that the real challenge wasn't just collecting feedback—it was turning that feedback into actionable insights that drive growth. Today, we continue to build platforms that bridge the gap between customer voices and business decisions."
+  quote: "Technology should empower authentic relationships between businesses and their customers, not complicate them."
+  founder:
+    name: 'Paulo Fidalgo'
+    role: 'Founding Engineer & Visionary'
+    image: '/assets/founder-avatar.webp'
+    summary: "Meet Paulo Fidalgo, our Founding Engineer. With a Master's in Computer Science and over 15 years of experience leading teams and building scalable solutions from Telco to hyper-growth AI startups, Paulo's vision and expertise are your assurance of impactful, trustworthy technology."
+  values:
+    - title: 'Innovation First.'
+      description: 'We are committed to pushing the boundaries of technology to create cutting-edge solutions.'
+    - title: 'Customer-Centric.'
+      description: "Our clients' success is our success. We build platforms that address real-world business needs."
+    - title: 'Integrity & Transparency.'
+      description: 'We believe in open communication and ethical practices in all our partnerships.'
+
+testimonials:
+  title: 'Client success stories'
+  subtitle: 'Building solutions that deliver real results'
+  items:
+    - quote: 'EthosLink completely changed how we manage our customer feedback. The insights helped us make small changes that significantly boosted our guest reviews.'
+      author: 'Emily Thompson'
+      author_title: 'Owner, Bed & Breakfast'
+    - quote: "Thanks to EthosLink, we now clearly see what's resonating with our diners. It's like having an extra manager who never sleeps."
+      author: 'Carlos Rivera'
+      author_title: 'Restaurant Owner'
+    - quote: 'EthosLink has become an essential tool for understanding our guests. The AI analytics are straightforward and genuinely actionable for a small hotel like ours.'
+      author: 'Angela Martinez'
+      author_title: 'Hotel Manager'
+    - quote: "We're impressed by how easy EthosLink makes it to track and improve customer satisfaction. It feels great knowing exactly what our customers value most."
+      author: 'Jason Kim'
+      author_title: 'Cafe Manager'
+    - quote: "Since partnering with EthosLink, we've seen a notable improvement in guest satisfaction. Their analytics are user-friendly and genuinely helpful."
+      author: 'Sophie Patel'
+      author_title: 'General Manager'
+
+technologies:
+  title: 'Our technology stack'
+  subtitle: 'Modern tools for robust solutions'
+  items:
+    - name: 'React & Next.js'
+      category: 'Frontend'
+    - name: 'Node.js & Python'
+      category: 'Backend'
+    - name: 'PostgreSQL & MongoDB'
+      category: 'Database'
+    - name: 'AWS & Docker'
+      category: 'Infrastructure'
+    - name: 'TensorFlow & PyTorch'
+      category: 'AI/ML'
+    - name: 'GraphQL & REST APIs'
+      category: 'Integration'
+
+contact:
+  title: "Let's build something amazing together"
+  description: "Ready to transform your business idea into a powerful platform? We'd love to hear about your vision."
+  form:
+    email_placeholder: 'your.email@company.com'
+    message_placeholder: 'Tell us about your project...'
+    cta: 'Send Message'
