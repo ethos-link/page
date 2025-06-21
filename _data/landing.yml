@@ -1,82 +1,135 @@
 hero:
-  announcement: 
-    text: "We're hiring"
-    link: "#careers"
-    link_text: "See open positions"
-  title: "A better way to ship your projects"
-  description: "Deploy faster with our comprehensive platform that includes push-to-deploy functionality, SSL certificates, and database backups. Scale your applications with confidence."
+  announcement:
+    text: 'New portfolio project launched'
+    link: '#portfolio'
+    link_text: 'See Reviato'
+  title: 'Building the future of business technology'
+  description: 'EthosLink creates innovative AI-powered solutions that connect businesses with their customers. From review management to customer analytics, we build platforms that drive real growth.'
   cta_primary:
-    text: "Get started"
-    link: "#signup"
+    text: 'View our work'
+    link: '#portfolio'
   cta_secondary:
-    text: "Learn more"
-    link: "#features"
+    text: 'Get in touch'
+    link: '#contact'
 
-features:
-  title: "Deploy faster"
-  subtitle: "Everything you need to deploy your app"
-  description: "Our comprehensive platform provides all the tools you need to deploy, scale, and manage your applications with confidence."
+navigation:
+  - text: 'Solutions'
+    link: '#solutions'
+  - text: 'Portfolio'
+    link: '#portfolio'
+  - text: 'About'
+    link: '#about'
+  - text: 'Contact'
+    link: '#contact'
+
+solutions:
+  title: 'What we build'
+  subtitle: 'AI-powered platforms for modern businesses'
+  description: 'We specialize in creating intelligent solutions that help businesses understand, engage, and grow their customer relationships.'
   items:
-    - title: "Push to deploy"
-      description: "Connect your Git repository and deploy with every push. Automatic builds, testing, and deployment pipelines keep your app up to date."
-      icon: "upload"
-    - title: "SSL certificates"
-      description: "Automatic SSL certificate provisioning and renewal. Keep your applications secure with zero configuration required."
-      icon: "lock"
-    - title: "Simple queues"
-      description: "Built-in job queues and background processing. Scale your application's background tasks effortlessly."
-      icon: "refresh"
+    - title: 'Customer Experience Platforms'
+      description: 'Build comprehensive systems that capture, analyze, and act on customer feedback across all touchpoints.'
+      icon: 'users'
+    - title: 'AI-Powered Analytics'
+      description: 'Transform raw data into actionable insights with machine learning models tailored to your business needs.'
+      icon: 'brain'
+    - title: 'Automation & Integration'
+      description: 'Streamline operations with intelligent workflows that connect your existing tools and processes.'
+      icon: 'automation'
 
 dark_section:
-  title: "Boost your productivity. Start using our app today."
-  description: "Deploy faster with automatic builds, SSL certificates, and database backups. Everything you need to ship with confidence."
+  title: 'Technology that scales with your vision'
+  description: 'From concept to deployment, we build robust solutions that grow with your business and adapt to changing market needs.'
   features:
-    - title: "Push to deploy."
-      description: "Connect your repository and deploy automatically with every push to your main branch."
-    - title: "SSL certificates."
-      description: "Automatic SSL certificate provisioning and renewal for all your custom domains."
-    - title: "Database backups."
-      description: "Automated daily backups with point-in-time recovery for your peace of mind."
+    - title: 'Full-Stack Development'
+      description: 'Modern web applications built with React, Node.js, and cloud-native architectures.'
+    - title: 'AI & Machine Learning'
+      description: 'Custom models for sentiment analysis, predictive analytics, and intelligent automation.'
+    - title: 'Enterprise Integration'
+      description: 'Seamless connections with existing systems, APIs, and third-party platforms.'
 
-newsletter:
-  title: "Get notified when we're launching"
-  description: "Be the first to know about new features, updates, and exclusive early access opportunities."
+portfolio:
+  title: 'Featured Project: Reviato'
+  subtitle: 'AI-powered review management platform'
+  description: 'Our flagship product that helps local businesses transform customer feedback into growth opportunities.'
+  features:
+    - title: 'Smart Review Monitoring'
+      description: 'Tracks reviews across 50+ platforms with real-time sentiment analysis and trend detection.'
+    - title: 'AI Response Generation'
+      description: 'Generates contextually appropriate responses using advanced natural language processing.'
+    - title: 'Business Intelligence Dashboard'
+      description: 'Converts review data into actionable insights with custom reporting and analytics.'
+  link:
+    text: 'Visit Reviato.com'
+    url: 'https://reviato.com'
+  stats:
+    - value: '10,000+'
+      label: 'Businesses served'
+    - value: '2.3M+'
+      label: 'Reviews analyzed'
+    - value: '94%'
+      label: 'Improvement in ratings'
+
+about:
+  title: 'About EthosLink'
+  subtitle: 'Building meaningful connections through technology'
+  description: 'Founded in 2020, EthosLink emerged from a simple belief: technology should make business relationships more meaningful, not more complicated.'
+  story: "We started by solving review management for local businesses and discovered that the real challenge wasn't just collecting feedback—it was turning that feedback into actionable insights that drive growth. Today, we continue to build platforms that bridge the gap between customer voices and business decisions."
+  quote: "Technology should empower authentic relationships between businesses and their customers, not complicate them."
+  founder:
+    name: 'Paulo Fidalgo'
+    role: 'Founding Engineer & Visionary'
+    image: '/assets/founder-avatar.webp'
+    summary: "Meet Paulo Fidalgo, our Founding Engineer. With a Master's in Computer Science and over 15 years of experience leading teams and building scalable solutions from Telco to hyper-growth AI startups, Paulo's vision and expertise are your assurance of impactful, trustworthy technology."
+  values:
+    - title: 'Innovation First.'
+      description: 'We are committed to pushing the boundaries of technology to create cutting-edge solutions.'
+    - title: 'Customer-Centric.'
+      description: "Our clients' success is our success. We build platforms that address real-world business needs."
+    - title: 'Integrity & Transparency.'
+      description: 'We believe in open communication and ethical practices in all our partnerships.'
 
 testimonials:
-  title: "Testimonials"
-  subtitle: "We have worked with thousands of amazing people"
+  title: 'Client success stories'
+  subtitle: 'Building solutions that deliver real results'
   items:
-    - quote: "EthosLink has completely transformed how we deploy our applications. The automatic SSL and database backups give us peace of mind."
-      author: "Brenna Goyette"
-      handle: "@brennagoyette"
-      company: "SavvyCal"
-      avatar: "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80"
-      featured: true
-    - quote: "The push-to-deploy feature saves us hours every week. Deployment has never been this simple."
-      author: "Leslie Alexander"
-      handle: "@lesliealexander"
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    - quote: "Outstanding platform with excellent support. The SSL automation alone is worth the price."
-      author: "Lindsay Walton"
-      handle: "@lindsaywalton"
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    - quote: "EthosLink's database backup system has saved us multiple times. Reliable and trustworthy service."
-      author: "Tom Cook"
-      handle: "@tomcook"
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    - quote: "The best deployment platform we've used. Simple, fast, and incredibly reliable for our production apps."
-      author: "Leonard Krasner"
-      handle: "@leonardkrasner"
-      avatar: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    - quote: 'EthosLink completely changed how we manage our customer feedback. The insights helped us make small changes that significantly boosted our guest reviews.'
+      author: 'Emily Thompson'
+      author_title: 'Owner, Bed & Breakfast'
+    - quote: "Thanks to EthosLink, we now clearly see what's resonating with our diners. It's like having an extra manager who never sleeps."
+      author: 'Carlos Rivera'
+      author_title: 'Restaurant Owner'
+    - quote: 'EthosLink has become an essential tool for understanding our guests. The AI analytics are straightforward and genuinely actionable for a small hotel like ours.'
+      author: 'Angela Martinez'
+      author_title: 'Hotel Manager'
+    - quote: "We're impressed by how easy EthosLink makes it to track and improve customer satisfaction. It feels great knowing exactly what our customers value most."
+      author: 'Jason Kim'
+      author_title: 'Cafe Manager'
+    - quote: "Since partnering with EthosLink, we've seen a notable improvement in guest satisfaction. Their analytics are user-friendly and genuinely helpful."
+      author: 'Sophie Patel'
+      author_title: 'General Manager'
 
-logos:
-  - name: "Transistor"
-    url: "https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-400.svg"
-  - name: "Reform"
-    url: "https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-400.svg"
-  - name: "Tuple"
-    url: "https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-400.svg"
-  - name: "SavvyCal"
-    url: "https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-400.svg"
-  - name: "Statamic"
-    url: "https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-400.svg"
+technologies:
+  title: 'Our technology stack'
+  subtitle: 'Modern tools for robust solutions'
+  items:
+    - name: 'React & Next.js'
+      category: 'Frontend'
+    - name: 'Node.js & Python'
+      category: 'Backend'
+    - name: 'PostgreSQL & MongoDB'
+      category: 'Database'
+    - name: 'AWS & Docker'
+      category: 'Infrastructure'
+    - name: 'TensorFlow & PyTorch'
+      category: 'AI/ML'
+    - name: 'GraphQL & REST APIs'
+      category: 'Integration'
+
+contact:
+  title: "Let's build something amazing together"
+  description: "Ready to transform your business idea into a powerful platform? We'd love to hear about your vision."
+  form:
+    email_placeholder: 'your.email@company.com'
+    message_placeholder: 'Tell us about your project...'
+    cta: 'Send Message'
