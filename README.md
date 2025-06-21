@@ -8,7 +8,7 @@
 <p align="center"><em>Creating innovative AI-powered solutions that connect businesses with their customers</em></p>
 
 <p align="center">
-  <a href="https://ethoslink.com">Visit EthosLink.com</a> ·
+  <a href="https://ethos-link.com">Visit Ethos-Link.com</a> ·
   <a href="#portfolio">View Portfolio</a> ·
   <a href="#contact">Get in Touch</a>
 </p>
@@ -124,9 +124,10 @@ With a Master's in Computer Science and over 15 years of experience leading team
 
 Ready to transform your business with AI-powered solutions?
 
-- **🌐 Website**: [ethoslink.com](https://ethoslink.com)
-- **🔗 GitHub**: [@ethoslink](https://github.com/ethoslink)
-- **🐦 Twitter**: [@thereviato](https://twitter.com/thereviato)
+- **🌐 Website**: [ethos-link.com](https://ethos-link.com)
+- **🔗 GitHub**: [@ethos-link](https://github.com/ethos-link)
+- **� LinkedIn**: [Ethos-Link](https://www.linkedin.com/company/ethos-link)
+- **�🐦 Twitter**: [@thereviato](https://twitter.com/thereviato)
 
 ### Try Reviato Free
 Start managing your online reputation today with a **14-day free trial**:
