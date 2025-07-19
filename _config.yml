@@ -23,33 +23,33 @@ email: hello@ethoslink.com
 description: >- # this means to ignore newlines until "baseurl:"
   EthosLink creates innovative AI-powered solutions for businesses. We specialize in
   customer experience platforms, review management systems, and intelligent business analytics.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thereviato
 github_username: ethos-link
 
 # Custom site data for the landing page
 company:
-  name: "EthosLink"
-  tagline: "AI-Powered Business Solutions"
-  description: "Creating innovative technology solutions that connect businesses with their customers through intelligent platforms and data-driven insights."
+  name: 'EthosLink'
+  tagline: 'AI-Powered Business Solutions'
+  description: 'Creating innovative technology solutions that connect businesses with their customers through intelligent platforms and data-driven insights.'
 
 navigation:
-  - name: "Solutions"
-    url: "#solutions"
-  - name: "Portfolio"
-    url: "#portfolio"
-  - name: "About"
-    url: "#about"
-  - name: "Contact"
-    url: "#contact"
+  - name: 'Solutions'
+    url: '#solutions'
+  - name: 'Portfolio'
+    url: '#portfolio'
+  - name: 'About'
+    url: '#about'
+  - name: 'Contact'
+    url: '#contact'
 
 # Build settings
 # theme: minima  # Commented out since using custom template
 plugins:
   - jekyll-feed
   - jekyll-tailwindcss
-
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
