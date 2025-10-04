@@ -9,7 +9,7 @@ title: Home
   <!-- Hero section -->
   <div class="relative isolate pt-14">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#4F46E5] to-[#312E81] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
     <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
@@ -60,25 +60,9 @@ title: Home
             {% for feature in site.data.landing.dark_section.features %}
             <div class="relative pl-9">
               <dt class="inline font-semibold text-white">
-                {% if feature.title contains 'Smart Review' %}
                 <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.719c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
-                {% elsif feature.title contains 'AI-Powered' %}
-                <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M10 2c1.415 0 2.707.497 3.728 1.325a5.003 5.003 0 0 1 3.947 3.947A5.003 5.003 0 0 1 18.998 10a5.003 5.003 0 0 1-1.323 3.728A5.003 5.003 0 0 1 14 16a5.003 5.003 0 0 1-8 0 5.003 5.003 0 0 1-3.675-2.272A5.003 5.003 0 0 1 1.002 10a5.003 5.003 0 0 1 1.323-3.728A5.003 5.003 0 0 1 6 4a5.003 5.003 0 0 1 4-2Z" clip-rule="evenodd" />
-                </svg>
-                {% elsif feature.title contains 'Automated' %}
-                <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Z" clip-rule="evenodd" />
-                  <path fill-rule="evenodd" d="M4.688 8.576a5.5 5.5 0 0 1 9.201-2.466l.312.311H11.77a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .75-.75V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.449.39Z" clip-rule="evenodd" />
-                </svg>
-                {% else %}
-                <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                  <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
-                </svg>
-                {% endif %}
                 {{ feature.title }}
               </dt>
               <dd class="inline">{{ feature.description }}</dd>
@@ -102,15 +86,16 @@ title: Home
         {% for feature in site.data.landing.solutions.items %}
         <div class="flex flex-col">
           <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-            {% if feature.icon == 'users' %}
+            {% case feature.icon %}
+            {% when 'insight' %}
             <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path d="M10 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM1.49 15.326a.78.78 0 0 1-.358-.442 3 3 0 0 1 4.308-3.516 6.484 6.484 0 0 0-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 0 1-2.07-.655ZM16.44 15.98a4.97 4.97 0 0 0 2.07-.654.78.78 0 0 0 .357-.442 3 3 0 0 0-4.308-3.517 6.484 6.484 0 0 1 1.907 3.96 2.32 2.32 0 0 1-.026.654ZM18 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM5.304 16.19a.844.844 0 0 1-.277-.71 5 5 0 0 1 9.947 0 .843.843 0 0 1-.277.71A6.975 6.975 0 0 1 10 18a6.974 6.974 0 0 1-4.696-1.81Z" />
+              <path d="M11.5 1.75a.75.75 0 0 0-1.5 0v1.128a5.752 5.752 0 0 0-4.33 3.656.75.75 0 0 0 1.414.53A4.252 4.252 0 0 1 10 4.25h.75v2.25H9.5a3.75 3.75 0 0 0-3.75 3.75v.25a.75.75 0 0 0 1.5 0v-.25A2.25 2.25 0 0 1 9.5 7.75h1.25v2.25a3.75 3.75 0 0 0 3.75 3.75.75.75 0 0 0 0-1.5 2.25 2.25 0 0 1-2.25-2.25V4.25h.75a4.25 4.25 0 0 1 4.25 4.25.75.75 0 0 0 1.5 0A5.75 5.75 0 0 0 11.5 2.878V1.75Z" />
             </svg>
-            {% elsif feature.icon == 'brain' %}
+            {% when 'globe' %}
             <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M10 2c1.415 0 2.707.497 3.728 1.325a5.003 5.003 0 0 1 3.947 3.947A5.003 5.003 0 0 1 18.998 10a5.003 5.003 0 0 1-1.323 3.728A5.003 5.003 0 0 1 14 16a5.003 5.003 0 0 1-8 0 5.003 5.003 0 0 1-3.675-2.272A5.003 5.003 0 0 1 1.002 10a5.003 5.003 0 0 1 1.323-3.728A5.003 5.003 0 0 1 6 4a5.003 5.003 0 0 1 4-2Z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M10 1.25a8.75 8.75 0 1 0 0 17.5 8.75 8.75 0 0 0 0-17.5Zm6.215 8a7.252 7.252 0 0 0-5.465-5.465 17.53 17.53 0 0 1 1.35 5.465h4.115Zm-5.615 1.5v3.872c.563.374 1.453.628 2.4.628 1.27 0 2.5-.455 3.265-1.22a7.233 7.233 0 0 0 .796-3.28h-6.461Zm-1.5 0H2.92a7.233 7.233 0 0 0 .796 3.28c.765.765 1.995 1.22 3.265 1.22.947 0 1.837-.254 2.4-.628V10.75Zm0-1.5V5.378c-.563-.374-1.453-.628-2.4-.628-1.27 0-2.5.455-3.265 1.22A7.233 7.233 0 0 0 2.92 9.25h6.18Zm1.5 0h6.46a7.233 7.233 0 0 0-.796-3.28c-.765-.765-1.995-1.22-3.265-1.22-.947 0-1.837.254-2.4.628V9.25Zm-1.5 5.372V10.75h-2.25v2.27c0 .648.125 1.81 2.25 1.856Zm1.5-4.622V5.378c2.125.046 2.25 1.208 2.25 1.856V9.25h-2.25Z" clip-rule="evenodd" />
             </svg>
-            {% elsif feature.icon == 'automation' %}
+            {% when 'automation' %}
             <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
               <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Z" clip-rule="evenodd" />
               <path fill-rule="evenodd" d="M4.688 8.576a5.5 5.5 0 0 1 9.201-2.466l.312.311H11.77a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .75-.75V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.449.39Z" clip-rule="evenodd" />
@@ -119,7 +104,7 @@ title: Home
             <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.719c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            {% endif %}
+            {% endcase %}
             {{ feature.title }}
           </dt>
           <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
@@ -163,7 +148,7 @@ title: Home
 
     <!-- CTA to visit Reviato -->
     <div class="mt-16 text-center">
-      <a href="{{ site.data.landing.portfolio.link.url }}" target="_blank" class="rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{{ site.data.landing.portfolio.link.text }}</a>
+      <a href="{{ site.data.landing.portfolio.link.url }}" class="rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{{ site.data.landing.portfolio.link.text }}</a>
     </div>
 
     <!-- Portfolio stats -->

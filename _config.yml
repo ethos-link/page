@@ -21,8 +21,8 @@
 title: EthosLink
 email: hello@ethoslink.com
 description: >- # this means to ignore newlines until "baseurl:"
-  EthosLink creates innovative AI-powered solutions for businesses. We specialize in
-  customer experience platforms, review management systems, and intelligent business analytics.
+  EthosLink builds AI-powered customer experience tools like Reviato so hospitality and service
+  operators can understand feedback quickly and act with confidence.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thereviato
@@ -31,8 +31,8 @@ github_username: ethos-link
 # Custom site data for the landing page
 company:
   name: 'EthosLink'
-  tagline: 'AI-Powered Business Solutions'
-  description: 'Creating innovative technology solutions that connect businesses with their customers through intelligent platforms and data-driven insights.'
+  tagline: 'AI-Powered Customer Experience'
+  description: 'We create approachable AI tools—like Reviato—that help hospitality businesses listen, learn, and respond to guests without extra stress.'
 
 navigation:
   - name: 'Solutions'
