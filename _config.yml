@@ -28,6 +28,16 @@ url: 'https://www.ethos-link.com' # the base hostname & protocol for your site
 twitter_username: thereviato
 github_username: ethos-link
 
+# Social media profiles
+social_media:
+  youtube: 'https://www.youtube.com/@ethoslink'
+  instagram: 'https://www.instagram.com/ethos_link/'
+  twitter: 'https://x.com/ethos_link'
+  linkedin: 'https://www.linkedin.com/company/ethos-link/'
+  tiktok: 'https://www.tiktok.com/@ethoslink'
+  facebook: 'https://www.facebook.com/ethoslink'
+  github: 'https://www.github.com/ethos-link'
+
 # Custom site data for the landing page
 company:
   name: 'EthosLink'
