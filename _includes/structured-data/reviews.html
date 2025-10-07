@@ -1,0 +1,29 @@
+<!-- Review Schemas from Testimonials -->
+{% for testimonial in site.data.landing.testimonials.items %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "@id": "{{ site.url }}#reviato"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ testimonial.author }}",
+    "jobTitle": "{{ testimonial.author_title }}"
+  },
+  "reviewBody": "{{ testimonial.quote }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.company.name }}"
+  }
+}
+</script>
+{% endfor %}

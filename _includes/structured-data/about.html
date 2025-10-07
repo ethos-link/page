@@ -1,0 +1,11 @@
+<!-- Structured Data for About Page -->
+{% comment %}
+  Focuses on Person/Founder schema with organizational context:
+  - Organization (minimal reference)
+  - Person (Founder - full details)
+  - Breadcrumbs (Home → About)
+{% endcomment %}
+
+{% include structured-data/organization-minimal.html %}
+{% include structured-data/person-founder.html %}
+{% include structured-data/breadcrumbs.html current_page="About" current_url="/about/" %}

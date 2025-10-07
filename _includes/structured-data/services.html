@@ -1,0 +1,27 @@
+<!-- Service Schemas -->
+{% assign services = "Customer Experience Management,AI-Powered Analytics,Review Automation" | split: "," %}
+{% assign service_descriptions = "Unified feedback collection and management from all review platforms,AI-driven insights that surface trends and flag issues before they impact business,Automated follow-up workflows and response drafting for review management" | split: "," %}
+
+{% for service in services %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ service }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ site.company.name }}"
+  },
+  "description": "{{ service_descriptions[forloop.index0] }}",
+  "serviceType": "{{ service }}",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Bars, Restaurants, Cafes, Hotels, BnBs, Short-term Rentals, Tourist Guides, Tourist Activities"
+  }
+}
+</script>
+{% endfor %}

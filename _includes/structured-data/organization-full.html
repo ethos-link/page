@@ -1,0 +1,54 @@
+<!-- Organization Schema - Full Details -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.company.name }}",
+  "legalName": "{{ site.company.name }}, Inc.",
+  "url": "{{ site.url }}",
+  "logo": "{{ '/assets/ethoslink-logo.svg' | absolute_url }}",
+  "description": "{{ site.description | strip_html }}",
+  "email": "{{ site.email }}",
+  "foundingDate": "2024",
+  "founder": {
+    "@type": "Person",
+    "@id": "{{ site.url }}#founder"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://github.com/{{ site.github_username }}",
+    "https://www.linkedin.com/company/ethos-link",
+    "https://twitter.com/{{ site.twitter_username }}"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "email": "{{ site.email }}",
+    "availableLanguage": ["English", "Portuguese", "Spanish", "Italian"]
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Customer Experience Management",
+    "Reputation Management",
+    "Hospitality Technology",
+    "Review Analytics",
+    "Natural Language Processing"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "SoftwareApplication",
+        "@id": "{{ site.url }}#reviato"
+      }
+    }
+  ]
+}
+</script>

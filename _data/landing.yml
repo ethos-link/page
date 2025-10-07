@@ -7,7 +7,7 @@ hero:
   description: 'EthosLink built Reviato for busy hospitality teams. We collect feedback, explain what guests are saying, and suggest the next best action—in plain language.'
   cta_primary:
     text: 'Request a walkthrough'
-    link: '#contact'
+    link: '/contact/'
   cta_secondary:
     text: 'See Reviato in action'
     link: '#portfolio'
@@ -18,9 +18,9 @@ navigation:
   - text: 'Portfolio'
     link: '#portfolio'
   - text: 'About'
-    link: '#about'
+    link: '/about/'
   - text: 'Contact'
-    link: '#contact'
+    link: '/contact/'
 
 solutions:
   title: 'What you get with EthosLink + Reviato'
@@ -61,7 +61,7 @@ portfolio:
       description: 'Publish branded social posts and email snippets from standout reviews in one click.'
   link:
     text: 'Visit Reviato.com'
-    url: 'https://reviato.com'
+    url: 'https://www.reviato.com'
   stats:
     - value: '10,000+'
       label: 'SMBs supported'

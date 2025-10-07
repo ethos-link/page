@@ -1,0 +1,28 @@
+<!-- Person Schema - Founder -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}#founder",
+  "name": "{{ site.data.landing.about.founder.name }}",
+  "jobTitle": "{{ site.data.landing.about.founder.role }}",
+  "image": "{{ site.data.landing.about.founder.image | absolute_url }}",
+  "description": "{{ site.data.landing.about.founder.summary }}",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "{{ site.company.name }}",
+    "url": "{{ site.url }}"
+  },
+  "knowsAbout": [
+    "Software Engineering",
+    "Artificial Intelligence",
+    "Product Development",
+    "Hospitality Technology",
+    "Engineering Leadership"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Engineering"
+  }
+}
+</script>

@@ -1,0 +1,23 @@
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}"
+    }
+    {% if include.current_page and include.current_page != "Home" %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ include.current_page }}",
+      "item": "{{ site.url }}{{ include.current_url }}"
+    }
+    {% endif %}
+  ]
+}
+</script>

@@ -1,0 +1,44 @@
+<!-- SoftwareApplication Schema - Reviato Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "{{ site.url }}#reviato",
+  "name": "Reviato",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Customer Relationship Management",
+  "operatingSystem": "Web Browser",
+  "url": "https://www.reviato.com",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ site.company.name }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Contact for pricing"
+  },
+  "description": "{{ site.data.landing.portfolio.description }}",
+  "featureList": [
+    {% for feature in site.data.landing.portfolio.features %}"{{ feature.title }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "screenshot": "{{ '/assets/business-overview.webp' | absolute_url }}",
+  "softwareHelp": {
+    "@type": "CreativeWork",
+    "url": "{{ site.url }}/contact/"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "{{ site.data.landing.testimonials.items | size }}",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Bars, Restaurants, Cafes, Hotels, BnBs, Short-term Rentals, Tourist Guides, Tourist Activities"
+  }
+}
+</script>

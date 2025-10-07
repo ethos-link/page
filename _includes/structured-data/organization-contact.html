@@ -1,0 +1,16 @@
+<!-- Organization Schema - With Contact Information -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.company.name }}",
+  "url": "{{ site.url }}",
+  "email": "{{ site.email }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "email": "{{ site.email }}",
+    "availableLanguage": ["English", "Portuguese", "Spanish", "Italian"]
+  }
+}
+</script>

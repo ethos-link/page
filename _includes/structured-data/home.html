@@ -1,0 +1,17 @@
+<!-- Structured Data for Homepage -->
+{% comment %}
+  Includes all primary schemas for the main landing page:
+  - Organization (full details)
+  - WebSite
+  - SoftwareApplication (Reviato)
+  - Services (3 schemas)
+  - Reviews (5 schemas)
+  - Breadcrumbs (homepage only)
+{% endcomment %}
+
+{% include structured-data/organization-full.html %}
+{% include structured-data/website.html %}
+{% include structured-data/software-reviato.html %}
+{% include structured-data/services.html %}
+{% include structured-data/reviews.html %}
+{% include structured-data/breadcrumbs.html current_page="Home" %}
