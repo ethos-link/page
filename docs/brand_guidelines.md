@@ -1,6 +1,22 @@
 # EthosLink – Brand & Positioning Blueprint
 
-> **Purpose** Use this living document as the single source of truth for EthosLink’s narrative, product positioning, and visual identity. It should inform landing-page copy, sales decks, nurture emails, social posts, and PR. Reviato, our flagship platform, inherits these principles.
+> **Purpose** Use this living document as the single source of truth for EthosLink’s narrative, product positioning, and visual identity. It should inform land### 13e. Logo Usage
+
+1. **Primary logo** (`ethoslink-logo.svg`): Full-colour EthosLink wordmark on white or light backgrounds.
+   - Uses Logo Navy (`#16213e`) for text
+   - Uses Logo Teal (`#00c4b8`) for accent elements
+   - Uses Logo Dark Navy (`#0d1d3d`) for icon fill
+
+2. **Dark mode logo** (`ethoslink-logo-white.svg`): White wordmark on dark backgrounds (gray-900, navy, or Ethos Indigo).
+   - Uses white/off-white (`#FFFFFF` or `#F9FAFB`) for text
+   - Uses Logo Teal (`#00c4b8`) or lighter teal for accent elements
+   - Recommended for dark backgrounds (`#111827` or darker)
+
+3. **Reviato sub-brand lockup**: EthosLink wordmark top-left, Reviato badge bottom-right for co-marketing.
+
+4. **Minimum size**: 120 px width digital; maintain clear space equal to the "E" height.
+
+5. **Accessibility**: All logo variants include proper ARIA labels and role attributes for screen readers.ge copy, sales decks, nurture emails, social posts, and PR. Reviato, our flagship platform, inherits these principles.
 
 ---
 
@@ -147,6 +163,8 @@ All CTAs should emphasise ease, guidance, and human support.
 
 ### 13a. Colour Palette
 
+#### Primary Brand Colors
+
 | Name                | Hex       | Usage                                    |
 | ------------------- | --------- | ---------------------------------------- |
 | **Ethos Indigo**    | `#4F46E5` | Primary accents, headings, key CTAs      |
@@ -156,11 +174,25 @@ All CTAs should emphasise ease, guidance, and human support.
 | **Harbor Gray**     | `#9CA3AF` | Supporting text, dividers, subdued icons |
 | **Amber Highlight** | `#F59E0B` | Secondary highlight for stats or badges  |
 
+#### Logo-Specific Colors
+
+| Name                | Hex       | Usage                                    |
+| ------------------- | --------- | ---------------------------------------- |
+| **Logo Navy**       | `#16213e` | EthosLink wordmark text in logo          |
+| **Logo Teal**       | `#00c4b8` | Link accent elements, icon highlights    |
+| **Logo Dark Navy**  | `#0d1d3d` | Icon fill in standard logo               |
+| **Logo Blue**       | `#2a7fff` | Icon fill in dark variant logo           |
+
+**Note:** Logo colors are embedded in the SVG files and should remain consistent. Use Ethos Indigo (`#4F46E5`) for web UI elements and CTAs, while Logo Navy (`#16213e`) is reserved for the logo itself.
+
 ### 13b. Typography
 
-* **Wordmark:** *Inter Bold*
-* **Headings:** *Inter SemiBold*
-* **Body:** *Inter Regular*
+* **Wordmark:** *Roboto Flex Bold* (600 weight)
+* **Headings:** *Roboto Flex SemiBold* (600 weight)
+* **Body:** *Roboto Flex Regular* (400 weight)
+* **Fallback:** Inter, system-ui, sans-serif
+
+**Note:** Roboto Flex is a variable font supporting weights 100-1000, providing flexibility for emphasis and hierarchy.
 
 ### 13c. Accessibility & Contrast Checklist
 
@@ -181,8 +213,8 @@ All CTAs should emphasise ease, guidance, and human support.
   --brand-bg: #E0E7FF;
   --brand-ink: #111827;
   --brand-muted: #9CA3AF;
-  --font-heading: "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: "Roboto Flex", "Inter", system-ui, sans-serif;
+  --font-body: "Roboto Flex", "Inter", system-ui, sans-serif;
 }
 ```
 
@@ -232,4 +264,116 @@ All CTAs should emphasise ease, guidance, and human support.
 
 ---
 
-_Last updated: 20 May 2025_
+## 16. Technical Implementation
+
+### 16a. Tailwind CSS v4
+
+EthosLink uses **Tailwind CSS v4** for styling consistency and rapid development.
+
+**Configuration:**
+- Custom color palette defined in CSS custom properties (Section 13d)
+- Font family: Roboto Flex with Inter fallback
+- Component-first approach for buttons, forms, and navigation
+- Responsive breakpoints: mobile-first (sm: 640px, md: 768px, lg: 1024px, xl: 1280px)
+
+**Dark Mode Support:**
+- Use Tailwind's `dark:` variant for all components
+- Logo switches to white variant (`ethoslink-logo-white.svg`) in dark mode
+- Text colors invert: `dark:text-white`, `dark:bg-gray-900`
+- Maintain WCAG AA contrast ratios in both themes
+
+### 16b. Icon System
+
+**Primary:** [Heroicons](https://heroicons.com/) (MIT License)
+- Outline style (24×24) for navigation and primary actions
+- Solid style (20×20) for smaller UI elements and badges
+- Micro style (16×16) for inline text icons
+
+**Usage:**
+- All icons use `currentColor` for automatic theme adaptation
+- Include `aria-hidden="true"` for decorative icons
+- Provide text labels or `aria-label` for functional icons
+- SVG format preferred for scalability and color control
+
+### 16c. Dark Mode Implementation
+
+**Strategy:**
+- CSS `prefers-color-scheme` media query for system preference detection
+- Optional user toggle to override system preference
+- State persisted in localStorage
+
+**Component Adaptations:**
+
+| Element | Light Mode | Dark Mode |
+|---------|-----------|-----------|
+| **Logo** | `ethoslink-logo.svg` | `ethoslink-logo-white.svg` |
+| **Background** | `bg-white` | `dark:bg-gray-900` |
+| **Text** | `text-gray-900` | `dark:text-gray-100` |
+| **Secondary Text** | `text-gray-600` | `dark:text-gray-400` |
+| **Borders** | `border-gray-200` | `dark:border-gray-700` |
+| **Cards** | `bg-white` | `dark:bg-gray-800` |
+| **Primary CTA** | `bg-indigo-600` | `dark:bg-indigo-500` |
+
+**Testing Checklist:**
+- [ ] Verify contrast ratios meet WCAG AA in both modes
+- [ ] Test logo visibility on all background colors
+- [ ] Ensure hover states work in both themes
+- [ ] Validate focus indicators in dark mode
+- [ ] Check form inputs for sufficient contrast
+
+---
+
+_Last updated: 7 October 2025_
+
+---
+
+## Brand Voice
+
+**Voice (Short Blurb)**
+
+> **Our voice is warm, plain‑spoken, and steady—more coach than hype.** We speak to busy hospitality and service operators in everyday language, focus on time saved and clear next steps, and avoid fear tactics or overpromising.
+
+**Voice (Expanded)**
+
+We sound **calm, confident, and reassuring**, like a seasoned operator helping a peer. We explain insights in **plain language**, highlight **one or two actions** people can take now, and keep our promises transparent. Our audience is **non‑technical owners, general managers, and ops managers**, so we avoid jargon and emphasize **time savings, staff morale, and steady growth**. We never use fear to sell and we don’t overstate what automation can do.
+
+**Voice Traits**
+
+- **Warm & reassuring** (coach, not hype)
+- **Plain‑spoken & jargon‑free**
+- **Operator‑first & practical** (actionable next steps)
+- **Transparent & trustworthy** (explainable changes; visible outcomes)
+- **Outcome‑focused** (ratings up, hours saved, calmer shifts)
+- **Steady & confident** (no theatrics, no panic)
+
+**Do / Don’t**
+
+**Do**
+- Lead with **relief and clarity** (“Here’s what changed and what to do next”).
+- Use **short, direct sentences** and specific outcomes (stars up, hours saved).
+- Offer **one clear action** per message (digest, checklist, or reply).
+
+**Don’t**
+- **Fear‑sell** (“You’ll tank without this”) or **overpromise automation**.
+- Bury people in **technical charts or buzzwords**.
+- Write like a dashboard—write like a **coach on shift**.
+
+**Example Microcopy**
+
+- **Homepage/hero:** “Keep on top of every review—without losing your weekend.”
+- **Digest email:** “Guests loved brunch. Prep extra pastries on Saturday and reply to Mia’s note.”
+- **Product UI:** “Pick the platforms you monitor. We’ll pull the rest.”
+
+
+
+## Social Template Specs
+
+**Social Template Specs**
+
+- **LinkedIn:** Banner 1128×191; Post 1200×1200; Carousel 1080×1080 (4–7 slides)
+- **X (Twitter):** Header 1500×500; Post 1200×675 (keep text in center)
+- **Instagram:** Post 1080×1080; Story/Reel cover 1080×1920
+- **Facebook:** Cover 1640×624; Post 1200×1200
+- **TikTok:** Video cover 1080×1920
+- **Safe margins:** keep 40 px inside edges; place logo small and consistent
+
