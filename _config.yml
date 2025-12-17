@@ -37,6 +37,7 @@ social_media:
   tiktok: 'https://www.tiktok.com/@ethoslink'
   facebook: 'https://www.facebook.com/ethoslink'
   github: 'https://www.github.com/ethos-link'
+  pinterest: 'https://www.pinterest.com/ethoslink'
 
 # Custom site data for the landing page
 company:
@@ -68,11 +69,10 @@ include:
 # Defaults for documentation pages
 defaults:
   - scope:
-      path: "docs"
+      path: 'docs'
     values:
       sitemap: true
       layout: default
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
