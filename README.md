@@ -4,134 +4,77 @@
   <img src="assets/ethoslink-logo.svg" alt="EthosLink - AI-powered business solutions" width="250" />
 </p>
 
-<h3 align="center">Building the future of business technology</h3>
-<p align="center"><em>Creating innovative AI-powered solutions that connect businesses with their customers</em></p>
+<p align="center">
+  <a href="https://www.ethos-link.com/">
+    <strong>Ethos Link</strong>
+  </a>
+</p>
+
+<h1 align="center">Software that fits how you actually work</h1>
+<p align="center"><em>Human service, thoughtful AI.</em></p>
 
 <p align="center">
-  <a href="https://ethos-link.com">Visit Ethos-Link.com</a> ·
-  <a href="#portfolio">View Portfolio</a> ·
-  <a href="#contact">Get in Touch</a>
+  We build software for hospitality and service teams that need useful answers fast, not heavy setup.
+  Get the signal, take action, and get back to work.
+</p>
+
+<p align="center">
+  <a href="https://www.ethos-link.com/about/">About</a> ·
+  <a href="https://www.ethos-link.com/contact/">Contact</a> ·
+  <a href="https://www.reviato.com/">Our product: Reviato</a>
 </p>
 
 ---
 
-## 🚀 About EthosLink
+Ethos Link builds pragmatic software that helps small and medium businesses adopt “high-tech” workflows without high-tech overhead.
 
-EthosLink creates innovative AI-powered solutions for businesses. We specialize in customer experience platforms, review management systems, and intelligent business analytics. Founded in 2020, we emerged from a simple belief: technology should make business relationships more meaningful, not more complicated.
+**Reviato** is our flagship product: a review intelligence platform for hospitality and service operators. It unifies reviews + feedback across platforms, turns them into plain-language insights, and helps teams act consistently.
 
-### Our Mission
-To build platforms that bridge the gap between customer voices and business decisions, empowering authentic relationships through technology.
-
-### What We Build
-- **Customer Experience Platforms** - Comprehensive solutions for managing customer interactions
-- **AI Analytics** - Intelligent insights from customer feedback and business data
-- **Review Management Systems** - Automated tools for reputation management
-- **Business Intelligence Dashboards** - Data-driven insights for growth
+- Company: <https://www.ethos-link.com>
+- Product: <https://www.reviato.com>
 
 ---
 
-## 🌟 Featured Product: Reviato
+## Mission
 
-<p align="center">
-  <img src="assets/reviato-logo.svg" alt="Reviato - AI-powered review management for small businesses" width="200" />
-</p>
+Ethos Link exists to close the gap between modern technology and SMBs by shipping solutions that optimize workflows and increase revenue.
 
-<h2 align="center">Reviato</h2>
-<p align="center"><em>More stars. Less hassle.</em></p>
-
-<p align="center">
-  <a href="https://www.reviato.com/pages/product">Product Overview</a> ·
-  <a href="https://www.reviato.com/pages/pricing">Compare Plans</a> ·
-  <a href="https://www.reviato.com/#signup">Start Free Trial</a>
-</p>
-
-### Transform Your Online Reputation with AI
-
-Reviato is our flagship review management platform designed specifically for small businesses. It combines AI-powered sentiment analysis with automated response generation to help businesses maintain and improve their online reputation effortlessly.
-
-#### Key Features:
-- **Automated Review Monitoring** - Track reviews across all major platforms
-- **AI-Powered Response Generation** - Smart, personalized responses to customer feedback
-- **Sentiment Analysis** - Understand customer emotions and trends
-- **Business Intelligence Dashboard** - Convert review data into actionable insights
-- **Multi-Platform Integration** - Google, Yelp, Facebook, and more
-
-#### Success Metrics:
-- **10,000+** Businesses served
-- **2.3M+** Reviews analyzed
-- **94%** Improvement in average ratings
+We build in public when it’s useful to other developers, founders, and operators—especially around infrastructure, deployment, and the “boring” reliability work required to keep products running.
 
 ---
 
-## 📚 Learn to Master Reviews
+## Reviato (a product of Ethos Link)
 
-Empower your business with our free guides:
+Reviato helps teams stay on top of customer sentiment without spending their week inside review platforms.
 
-- [The Complete Guide to Online Reviews](https://www.reviato.com/articles/online-reviews-guide)
-- [How to Turn Negative Reviews into Business Wins](https://www.reviato.com/articles/negative-reviews-guide)
-- [Ethical Ways to Request Reviews](https://www.reviato.com/articles/ethical-review-requests)
+What it does (high level):
 
----
+- Aggregates reviews from platforms like Google, TripAdvisor, and OTAs
+- Runs sentiment + aspect analysis to surface patterns (what’s working, what’s slipping)
+- Produces digestible summaries for operators (daily/weekly)
+- Supports multi-location teams and role-aware workflows
 
-## 🎯 Our Values
-
-### Innovation First
-We are committed to pushing the boundaries of technology to create cutting-edge solutions that solve real business problems.
-
-### Customer-Centric
-Our clients' success is our success. We build platforms that address real-world business needs with measurable results.
-
-### Integrity & Transparency
-We believe in open communication and ethical practices in all our partnerships and technology solutions.
+If you’re building in hospitality, retail, or any feedback-heavy business: the problem isn’t “more data”, it’s getting to the next best action quickly.
 
 ---
 
-## 📊 Portfolio Highlights
+## A real work example (extracted)
 
-### Reviato - Review Management Platform
-- **Industry**: Hospitality, Retail, Food & Beverage
-- **Technology**: AI/ML, React, Node.js, PostgreSQL
-- **Impact**: 94% improvement in customer ratings across 10,000+ businesses
+A common workflow we ship in Reviato is the **“morning snapshot”**:
 
-### Custom Business Intelligence Solutions
-- Real-time analytics dashboards for enterprise clients
-- Automated reporting and insights generation
-- Integration with existing business systems
+- Ingest new reviews and in-house appraisals overnight
+- Classify sentiment and extract key aspects (service, cleanliness, value, location)
+- Highlight anomalies (rating drops, recurring complaints, sudden spikes)
+- Generate a short summary email with suggested actions per location
 
----
+This sounds simple, but it’s a real production pipeline with a few non-negotiables:
 
-## 👨‍💻 About the Founder
+- Idempotent ingestion across multiple providers
+- Background jobs + retries (provider APIs fail; your customers shouldn’t notice)
+- A database that can sustain bursts of writes + reads (and still be recoverable)
+- Clear operational tooling (backups, restores, logging, runbooks)
 
-**Paulo Fidalgo** - Founder & Engineer
-With a Master's in Computer Science and over 15 years of experience leading teams and building scalable solutions from Telco to hyper-growth AI startups, Paulo's vision and expertise ensure impactful, trustworthy technology solutions.
-
----
-
-## 🤝 Client Success Stories
-
-> "EthosLink completely changed how we manage our customer feedback. The insights helped us make small changes that significantly boosted our guest reviews."
-> **Emily Thompson**, Owner, Bed & Breakfast
-
-> "Thanks to EthosLink, we now clearly see what's resonating with our diners. It's like having an extra manager who never sleeps."
-> **Carlos Rivera**, Restaurant Owner
-
-> "Since partnering with EthosLink, we've seen a notable improvement in guest satisfaction. Their analytics are user-friendly and genuinely helpful."
-> **Sophie Patel**, General Manager
-
----
-
-## 📞 Get Started
-
-Ready to transform your business with AI-powered solutions?
-
-- **🌐 Website**: [ethos-link.com](https://ethos-link.com)
-- **🔗 GitHub**: [@ethos-link](https://github.com/ethos-link)
-- **� LinkedIn**: [Ethos-Link](https://www.linkedin.com/company/ethos-link)
-- **�🐦 Twitter**: [@thereviato](https://twitter.com/thereviato)
-
-### Try Reviato Free
-Start managing your online reputation today with a **14-day free trial**:
-👉 [Get Started with Reviato](https://www.reviato.com/#signup)
+That’s the kind of engineering Ethos Link focuses on: systems that don’t add cognitive load to already-busy teams.
 
 ---
 
@@ -159,6 +102,4 @@ bundle exec jekyll build
 
 ---
 
-*© 2025 EthosLink, Inc. All rights reserved.*
-
-**Keywords**: AI review management, customer experience platform, business intelligence, online reputation management, small business software, automated review responses, sentiment analysis, hospitality technology, restaurant management software
+*© 2026 EthosLink, Inc. All rights reserved.*
